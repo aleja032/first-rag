@@ -1,0 +1,10 @@
+Django==4.2.24  # Core web framework for building the application backend.
+python-dotenv # To load environment variables from a .env file.
+langchain         # The main LangChain framework for developing LLM-powered applications.
+langchain-text-splitters # To break down (split) large text documents into smaller, manageable chunks, which are then used to create embedding vectors.
+langchain-community # Packages for integrating with various open-source and community-maintained models and tools.
+langchain[google-genai]  # Installs the necessary components to use Google's Generative AI models (like Gemini) as the LLM chat model.
+langchain-huggingface  # To utilize models from the Hugging Face ecosystem, typically for creating embedding vectors or running local LLMs.
+langchain-chroma  # A package for integrating LangChain with Chroma, a popular open-source vector store used to efficiently store and retrieve the embedding vectors.
+sentence-transformers
+pypdf
