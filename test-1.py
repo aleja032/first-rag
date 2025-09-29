@@ -22,9 +22,6 @@ def main():
     )
 
     
-    LANGSMITH_TRACING="true"
-    LANGSMITH_API_KEY="AIzaSyBRZls5DQHo4bX1Gp4cq26icok-McxVJn4"
-
 #-------------------------------------------------------------------------------
     # # 3. Cargar documento desde archivo
     # with open("QA_Problems.pdf", "r", encoding="utf-8") as f:
@@ -89,7 +86,7 @@ def main():
     #7
     api_key = os.getenv("GOOGLE_API_KEY")
     print("API Key:", api_key)
-    llm = init_chat_model("google_genai:gemini-2.0-flash", api_key="AIzaSyBRZls5DQHo4bX1Gp4cq26icok-McxVJn4")
+    llm = init_chat_model("google_genai:gemini-2.0-flash", api_key="")
 
     # 8. Crear cadena RetrievalQA que combina retriever y LLM
     qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
